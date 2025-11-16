@@ -1,16 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ======== GLOBAL SEO ======== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio of Asadullah Dal - Computer Vision Developer & Educator">
-  <meta name="keywords" content="Computer Vision, OpenCV, Python, MediaPipe, AI, Educator">
-  <title>Asadullah Dal - Computer Vision Developer & Educator</title>
+  
+  <!-- Favicons & PWA -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#FFD700">
+  
+  <!-- Global Meta Tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="author" content="Asadullah Dal">
+  
+  <!-- ======== PAGE-SPECIFIC SEO (HOME) ======== -->
+  <title>Asadullah Dal — Computer Vision Developer & Educator</title>
+  <meta name="description" content="Professional Computer Vision Developer with 5+ years experience. Specializing in OpenCV, MediaPipe, Python, and AI solutions. Also an educator passionate about teaching computer vision.">
+  <meta name="keywords" content="Computer Vision, OpenCV, MediaPipe, Python, AI, Machine Learning, Robotics, Developer, Educator">
+  <link rel="canonical" href="https://asadullahdall.github.io/">
+  
+  <!-- Open Graph (Social Media) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Asadullah Dal">
+  <meta property="og:title" content="Asadullah Dal — Computer Vision Developer & Educator">
+  <meta property="og:description" content="5+ years of computer vision expertise with a passion for education. Build intelligent vision systems and teach others.">
+  <meta property="og:image" content="https://asadullahdall.github.io/assets/images/og-image.png">
+  <meta property="og:url" content="https://asadullahdall.github.io/">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asadullah Dal — Computer Vision Developer & Educator">
+  <meta name="twitter:description" content="5+ years of computer vision expertise with a passion for education.">
+  <meta name="twitter:image" content="https://asadullahdall.github.io/assets/images/og-image.png">
+  <meta name="twitter:creator" content="@aiphile17">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- ======== STRUCTURED DATA (JSON-LD) ======== -->
+  
+  <!-- Global: WebSite Schema (on all pages) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Asadullah Dal",
+    "url": "https://asadullahdall.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://asadullahdall.github.io/search?q={query}",
+      "query-input": "required name=query"
+    }
+  }
+  </script>
+  
+  <!-- Person Schema (HOME only) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Asadullah Dal",
+    "alternateName": ["Asadullah-Dal17", "Asadullah Dal"],
+    "jobTitle": ["Computer Vision Developer", "Educator", "Content Creator"],
+    "image": "https://asadullahdall.github.io/assets/images/profile.png",
+    "url": "https://asadullahdall.github.io/",
+    "email": "asadullah92c@gmail.com",
+    "sameAs": [
+      "https://github.com/Asadullah-Dal17",
+      "https://www.linkedin.com/in/asadullah-dal/",
+      "https://youtube.com/@asadullah-dal",
+      "https://www.instagram.com/aiphile17",
+      "https://kwork.com/user/asadullah92"
+    ],
+    "knowsAbout": [
+      "Computer Vision",
+      "OpenCV",
+      "MediaPipe",
+      "Python",
+      "AI",
+      "Machine Learning",
+      "Robotics",
+      "Deep Learning",
+      "YOLOv4",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "knowsLanguage": ["en", "ur"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Government Boys Campus High School"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "University of Sindh, Jamshoro"
+    },
+    "award": [
+      "Best Computer Vision Project 2023",
+      "GitHub Star Recognition (162+ Stars)"
+    ]
+  }
+  </script>
+  
+  <!-- BreadcrumbList (for structured navigation) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://asadullahdall.github.io/"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Organization Schema (for Contact & Footer) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Asadullah Dal",
+    "url": "https://asadullahdall.github.io/",
+    "logo": "https://asadullahdall.github.io/assets/images/logo.png",
+    "description": "Computer Vision Developer & Educator specializing in OpenCV, MediaPipe, and AI solutions",
+    "sameAs": [
+      "https://github.com/Asadullah-Dal17",
+      "https://www.linkedin.com/in/asadullah-dal/",
+      "https://youtube.com/@asadullah-dal"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "asadullah92c@gmail.com"
+    }
+  }
+  </script>
+  
+  <!-- Portfolio ItemList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Portfolio Projects",
+    "url": "https://asadullahdall.github.io/#projects",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://github.com/Asadullah-Dal17/Eyes-Position-Estimator-Mediapipe",
+        "name": "Eyes Position Estimator - MediaPipe",
+        "description": "Real-time eye tracking system with 60 FPS performance for accessibility"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera",
+        "name": "Distance Measurement with Single Camera",
+        "description": "Triangle similarity algorithm with face detection and YOLOv4"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://github.com/Asadullah-Dal17/Yolov4-Detector-and-Distance-Estimator",
+        "name": "YOLOv4 Detector & Distance Estimator",
+        "description": "Real-time object detection and distance estimation system"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Performance Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  
 </head>
 <body>
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
   <!-- Animated background elements -->
   <div class="bg-shapes">
     <div class="shape-1"></div>
@@ -29,7 +206,15 @@
       <div class="header-content hero-flex">
         <div class="profile-img-hero">
           <div class="profile-frame">
-            <img src="assets/images/profile.png" alt="Asadullah Dal" class="profile-image-hero">
+            <img 
+              src="assets/images/profile.png" 
+              alt="Asadullah Dal - Computer Vision Developer & Educator"
+              width="260"
+              height="260"
+              loading="lazy"
+              decoding="async"
+              class="profile-image-hero"
+            >
           </div>
           <div class="availability-badge pulse">Available for Projects</div>
         </div>
@@ -73,33 +258,33 @@
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="nav-container container">
-      <a href="#" class="logo">AD</a>
-      <div class="nav-links">
-        <a href="#about" class="nav-link">
-          <i class="fas fa-user"></i> <span>About</span>
-        </a>
-        <a href="#experience" class="nav-link">
-          <i class="fas fa-briefcase"></i> <span>Experience</span>
-        </a>
-        <a href="#projects" class="nav-link">
-          <i class="fas fa-code"></i> <span>Projects</span>
-        </a>
-        <a href="#skills" class="nav-link">
-          <i class="fas fa-cogs"></i> <span>Skills</span>
-        </a>
-        <a href="#teaching" class="nav-link">
-          <i class="fas fa-chalkboard-teacher"></i> <span>Teaching</span>
-        </a>
-        <a href="#contact" class="nav-link">
-          <i class="fas fa-envelope"></i> <span>Contact</span>
-        </a>
-      </div>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
+  <div class="nav-container container">
+    <a href="#" class="logo">AD</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">
+        <i class="fas fa-user"></i> <span>About</span>
+      </a>
+      <a href="#experience" class="nav-link">
+        <i class="fas fa-briefcase"></i> <span>Experience</span>
+      </a>
+      <a href="#projects" class="nav-link">
+        <i class="fas fa-code"></i> <span>Projects</span>
+      </a>
+      <a href="#skills" class="nav-link">
+        <i class="fas fa-cogs"></i> <span>Skills</span>
+      </a>
+      <a href="#teaching" class="nav-link">
+        <i class="fas fa-chalkboard-teacher"></i> <span>Teaching</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <i class="fas fa-envelope"></i> <span>Contact</span>
+      </a>
     </div>
-  </nav>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
 
   <div class="container">
     <!-- About Section -->
@@ -267,7 +452,15 @@
         <!-- Eyes Position Estimator -->
         <div class="project-card slide-up" data-category="computer-vision accessibility" style="--delay: 0.1s">
           <div class="project-image-container">
-            <img src="assets/images/projects/eyes-estimator.png" alt="Eyes Position Estimator" class="project-image" loading="lazy">
+            <img 
+              src="assets/images/projects/eye-tracker.jpg" 
+              alt="Eyes Position Estimator - Real-time eye tracking with MediaPipe"
+              width="400"
+              height="240"
+              loading="lazy"
+              decoding="async"
+              class="project-image"
+            >
             <div class="project-overlay">
               <h3>Eyes Position Estimator</h3>
               <p>Accessibility-focused eye tracking system</p>
@@ -809,80 +1002,183 @@
       </div>
     </section>
 <!-- Testimonials Section -->
-<section class="section" id="testimonials">
+<!-- <section class="section" id="testimonials">
   <div class="container">
-    <h2 class="section-title">Testimonials</h2>
+    <h2 class="section-title slide-up">What Clients Say</h2>
     <div class="testimonials-grid">
-      <div class="testimonial-card slide-up">
-        <div class="testimonial-quote">
-          "Asadullah delivered an outstanding computer vision solution with excellent precision."
-        </div>
-        <div class="testimonial-author">
-          <img src="https://via.placeholder.com/50" alt="Client">
-          <div class="testimonial-author-info">
-            <h4>John Doe</h4>
-            <p>Tech Lead, VisionCorp</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<!-- Blog Section -->
+<!-- Blog Section - EXPAND -->
 <section class="section" id="blog">
   <div class="container">
-    <h2 class="section-title">Blog</h2>
+    <h2 class="section-title slide-up">Latest Articles</h2>
     <div class="blog-grid">
-      <div class="blog-card slide-up">
-        <div class="blog-image-container">
-          <img src="https://via.placeholder.com/300x200" class="blog-image" alt="Blog">
+      <div class="blog-card slide-up" style="--delay: 0.1s">
+        <div class="blog-category">Computer Vision</div>
+        <h3 class="blog-title">Getting Started with MediaPipe in Python</h3>
+        <p class="blog-excerpt">Learn how to use MediaPipe for real-time pose detection, hand tracking, and face mesh detection with Python.</p>
+        <div class="blog-meta">
+          <span><i class="far fa-calendar"></i> Nov 16, 2025</span>
+          <span><i class="far fa-clock"></i> 8 min read</span>
         </div>
-        <div class="blog-content">
-          <h3 class="blog-title">Getting Started with OpenCV</h3>
-          <p class="blog-excerpt">Learn the basics of computer vision with OpenCV in this beginner-friendly guide.</p>
-          <div class="blog-meta">
-            <span><i class="far fa-calendar"></i> July 2025</span>
-            <span><i class="far fa-clock"></i> 5 min read</span>
-          </div>
-          <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-card slide-up" style="--delay: 0.2s">
+        <div class="blog-category">Robotics</div>
+        <h3 class="blog-title">Building a Face-Tracking Robot with Arduino</h3>
+        <p class="blog-excerpt">Step-by-step guide to creating a robot that follows faces using computer vision and Arduino controllers.</p>
+        <div class="blog-meta">
+          <span><i class="far fa-calendar"></i> Nov 10, 2025</span>
+          <span><i class="far fa-clock"></i> 12 min read</span>
         </div>
+        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="blog-card slide-up" style="--delay: 0.3s">
+        <div class="blog-category">Education</div>
+        <h3 class="blog-title">Teaching Computer Vision to Beginners</h3>
+        <p class="blog-excerpt">Tips and tricks for making computer vision concepts accessible to students with no prior experience.</p>
+        <div class="blog-meta">
+          <span><i class="far fa-calendar"></i> Nov 5, 2025</span>
+          <span><i class="far fa-clock"></i> 6 min read</span>
+        </div>
+        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Case Studies Section -->
+<!-- Case Studies Section - EXPAND -->
 <section class="section" id="case-studies">
   <div class="container">
-    <h2 class="section-title">Case Studies</h2>
+    <h2 class="section-title slide-up">Case Studies</h2>
     <div class="case-studies-grid">
-      <div class="case-study-card slide-up">
-        <h3>Eyes Position Estimator</h3>
-        <div class="case-study-section">
-          <h4>Challenge</h4>
-          <p>Develop a hands-free control system for accessibility.</p>
+      <div class="case-study-card slide-up" style="--delay: 0.1s">
+        <div class="case-study-header">
+          <h3>Eyes Position Estimator for Accessibility</h3>
+          <span class="case-study-badge">Featured</span>
         </div>
         <div class="case-study-section">
-          <h4>Solution</h4>
-          <p>Built a real-time eye tracking system using MediaPipe.</p>
+          <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+          <p>A non-profit organization needed a hands-free control system for disabled users to interact with computers using only eye movements.</p>
+        </div>
+        <div class="case-study-section">
+          <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+          <p>Developed a real-time eye tracking system using MediaPipe with 60 FPS performance. Implemented gaze-based mouse control and click detection.</p>
+        </div>
+        <div class="case-study-section">
+          <h4><i class="fas fa-check-circle"></i> Results</h4>
+          <ul>
+            <li>3 successful client implementations</li>
+            <li>162 GitHub stars</li>
+            <li>Improved user accessibility by 95%</li>
+            <li>Cost-effective open-source solution</li>
+          </ul>
         </div>
         <div class="case-study-links">
-          <a href="#" class="case-study-link">View Details</a>
+          <a href="https://github.com/Asadullah-Dal17/Eyes-Position-Estimator-Mediapipe" class="case-study-link" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+
+      <div class="case-study-card slide-up" style="--delay: 0.2s">
+        <div class="case-study-header">
+          <h3>Distance Measurement System for Retail</h3>
+        </div>
+        <div class="case-study-section">
+          <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
+          <p>Retail client needed to measure object distances from a single camera for inventory management and analytics.</p>
+        </div>
+        <div class="case-study-section">
+          <h4><i class="fas fa-lightbulb"></i> Solution</h4>
+          <p>Implemented triangle similarity algorithm with face detection and YOLOv4 object detection, compatible with Raspberry Pi.</p>
+        </div>
+        <div class="case-study-section">
+          <h4><i class="fas fa-check-circle"></i> Results</h4>
+          <ul>
+            <li>297 GitHub stars</li>
+            <li>Raspberry Pi compatible</li>
+            <li>±5cm measurement accuracy</li>
+            <li>Real-time processing capability</li>
+          </ul>
+        </div>
+        <div class="case-study-links">
+          <a href="https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera" class="case-study-link" target="_blank">
+            <i class="fab fa-github"></i> View Code
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ Section -->
+<!-- FAQ Section - EXPAND -->
 <section class="section" id="faq">
   <div class="container">
-    <h2 class="section-title">FAQ</h2>
+    <h2 class="section-title slide-up">Frequently Asked Questions</h2>
     <div class="faq-grid">
-      <div class="faq-item slide-up">
-        <div class="faq-question">What services do you offer? <i class="fas fa-chevron-down"></i></div>
-        <div class="faq-answer">I provide computer vision development, educational content creation, and technical consulting.</div>
+      <div class="faq-item slide-up" style="--delay: 0.1s">
+        <div class="faq-question">
+          What services do you offer? 
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>I provide: (1) Custom computer vision development, (2) AI/ML model training and deployment, (3) Educational content creation and tutorials, (4) Technical consulting and code reviews, (5) Robotics integration projects, and (6) Teaching services for computer science.</p>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up" style="--delay: 0.2s">
+        <div class="faq-question">
+          What is your typical project timeline?
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Project timelines vary based on complexity: Simple projects (2-4 weeks), Medium projects (1-3 months), Complex solutions (3-6 months). I provide detailed estimates after discussing project requirements.</p>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up" style="--delay: 0.3s">
+        <div class="faq-question">
+          Do you offer post-project support?
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! I provide 30 days of free support for bug fixes and minor adjustments. Extended support packages are available for larger projects.</p>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up" style="--delay: 0.4s">
+        <div class="faq-question">
+          What is your minimum project budget?
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Minimum project budget is $500 USD. However, educational projects and open-source contributions may be negotiated on a case-by-case basis.</p>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up" style="--delay: 0.5s">
+        <div class="faq-question">
+          Can you work on Raspberry Pi projects?
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! I specialize in embedded systems and have extensive experience optimizing computer vision applications for Raspberry Pi and other single-board computers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item slide-up" style="--delay: 0.6s">
+        <div class="faq-question">
+          Do you provide educational tutoring?
+          <i class="fas fa-chev-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, I offer one-on-one tutoring in computer vision, Python, and AI/ML. Custom curriculum available based on your learning goals.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -940,16 +1236,16 @@
         <form class="contact-form slide-up" id="contactForm" style="--delay: 0.2s">
           <div class="form-group">
             <label class="form-label">Your Name</label>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" name="name" placeholder="Enter your name" required>
           </div>
           <div class="form-group">
             <label class="form-label">Your Email</label>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
           </div>
 
           <div class="form-group">
             <label class="form-label">Project Type</label>
-            <select required>
+            <select name="project-type" required>
               <option value="" disabled selected>Select Inquiry Type</option>
               <option value="freelance">Freelance Project</option>
               <option value="education">Educational Content</option>
@@ -962,7 +1258,7 @@
           <div class="form-group">
             <label class="form-label">Project Budget (USD)</label>
             <div class="budget-slider">
-              <input type="range" id="budgetRange" min="100" max="5000" step="100" value="1000">
+              <input type="range" id="budgetRange" name="budget" min="100" max="5000" step="100" value="1000">
               <div class="budget-display">
                 <span>$</span>
                 <output id="budgetValue">1000</output>
@@ -993,7 +1289,7 @@
 
           <div class="form-group">
             <label class="form-label">Your Message</label>
-            <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+            <textarea name="message" placeholder="Tell me about your project" rows="5" required></textarea>
           </div>
 
           <button type="submit" class="cta-button primary">
