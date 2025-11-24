@@ -191,18 +191,36 @@ document.addEventListener('DOMContentLoaded', () => {
       navLinks.classList.toggle('active');
       menuToggle.classList.toggle('active');
       menuToggle.setAttribute('aria-expanded', !isExpanded);
+
+      // Update aria-expanded for screen readers
+      navLinks.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
     });
+
+    // Close mobile menu when clicking outside or on a link
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.nav') && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navLinks.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        navLinks.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    // Initialize aria-hidden for screen readers
+    navLinks.setAttribute('aria-hidden', 'true');
   } else {
     console.warn('Mobile menu elements (.menu-toggle or .nav-links) not found.');
   }
-
-  // Close mobile menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.nav') && navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    }
-  });
 
   // =====================
   // Contact Form

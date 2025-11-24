@@ -7,7 +7,7 @@
   
   <!-- Favicons & PWA -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="assets/images/profile.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#FFD700">
   
@@ -28,7 +28,7 @@
   <meta property="og:site_name" content="Asadullah Dal">
   <meta property="og:title" content="Asadullah Dal — Computer Vision Developer & Educator">
   <meta property="og:description" content="5+ years of computer vision expertise with a passion for education. Build intelligent vision systems and teach others.">
-  <meta property="og:image" content="https://asadullahdall.github.io/assets/images/og-image.png">
+  <meta property="og:image" content="https://asadullahdall.github.io/assets/images/profile.png">
   <meta property="og:url" content="https://asadullahdall.github.io/">
   <meta property="og:locale" content="en_US">
   
@@ -36,7 +36,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Asadullah Dal — Computer Vision Developer & Educator">
   <meta name="twitter:description" content="5+ years of computer vision expertise with a passion for education.">
-  <meta name="twitter:image" content="https://asadullahdall.github.io/assets/images/og-image.png">
+  <meta name="twitter:image" content="https://asadullahdall.github.io/assets/images/profile.png">
   <meta name="twitter:creator" content="@aiphile17">
   
   <!-- Stylesheets -->
@@ -130,7 +130,7 @@
     "@type": "Organization",
     "name": "Asadullah Dal",
     "url": "https://asadullahdall.github.io/",
-    "logo": "https://asadullahdall.github.io/assets/images/logo.png",
+    "logo": "https://asadullahdall.github.io/assets/images/profile.png",
     "description": "Computer Vision Developer & Educator specializing in OpenCV, MediaPipe, and AI solutions",
     "sameAs": [
       "https://github.com/Asadullah-Dal17",
@@ -258,33 +258,42 @@
 
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-container container">
-    <a href="#" class="logo">AD</a>
-    <div class="nav-links">
-      <a href="#about" class="nav-link">
-        <i class="fas fa-user"></i> <span>About</span>
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Asadullah Dal - Home">
+        <span class="logo-text">AD</span>
       </a>
-      <a href="#experience" class="nav-link">
-        <i class="fas fa-briefcase"></i> <span>Experience</span>
-      </a>
-      <a href="#projects" class="nav-link">
-        <i class="fas fa-code"></i> <span>Projects</span>
-      </a>
-      <a href="#skills" class="nav-link">
-        <i class="fas fa-cogs"></i> <span>Skills</span>
-      </a>
-      <a href="#teaching" class="nav-link">
-        <i class="fas fa-chalkboard-teacher"></i> <span>Teaching</span>
-      </a>
-      <a href="#contact" class="nav-link">
-        <i class="fas fa-envelope"></i> <span>Contact</span>
-      </a>
+
+      <div class="nav-links" role="menubar">
+        <a href="#about" class="nav-link" role="menuitem" aria-label="About section">
+          <span>About</span>
+        </a>
+        <a href="#experience" class="nav-link" role="menuitem" aria-label="Experience section">
+          <span>Experience</span>
+        </a>
+        <a href="#teaching" class="nav-link" role="menuitem" aria-label="Teaching section">
+          <span>Teaching</span>
+        </a>
+        <a href="#projects" class="nav-link" role="menuitem" aria-label="Projects section">
+          <span>Projects</span>
+        </a>
+        <a href="#skills" class="nav-link" role="menuitem" aria-label="Skills section">
+          <span>Skills</span>
+        </a>
+        <a href="#fiverr-services" class="nav-link" role="menuitem" aria-label="Fiverr Services section">
+          <span>Fiverr Services</span>
+        </a>
+        <a href="#contact" class="nav-link" role="menuitem" aria-label="Contact section">
+          <span>Contact</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navigation-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-  </div>
-</nav>
+  </nav>
 
   <div class="container">
     <!-- About Section -->
@@ -439,21 +448,12 @@
     <section id="projects" class="section">
       <h2 class="section-title slide-up">Featured Projects</h2>
 
-      <div class="project-filters fade-in">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="computer-vision">Computer Vision</button>
-        <button class="filter-btn" data-filter="accessibility">Accessibility</button>
-        <button class="filter-btn" data-filter="open-source">Open Source</button>
-        <button class="filter-btn" data-filter="education">Education</button>
-        <button class="filter-btn" data-filter="robotics">Robotics</button>
-      </div>
-
       <div class="projects-grid">
         <!-- Eyes Position Estimator -->
         <div class="project-card slide-up" data-category="computer-vision accessibility" style="--delay: 0.1s">
           <div class="project-image-container">
-            <img 
-              src="assets/images/projects/eye-tracker.jpg" 
+            <img
+              src="assets/images/projects/eyes-estimator.png"
               alt="Eyes Position Estimator - Real-time eye tracking with MediaPipe"
               width="400"
               height="240"
@@ -741,23 +741,6 @@
           </div>
         </div>
       </div>
-
-      <div class="github-cta fade-in" style="text-align: center; margin-top: 3rem;">
-        <h3>Explore more projects on my GitHub</h3>
-        <div class="github-stats">
-          <div class="stat">
-            <i class="fas fa-code"></i>
-            <span>128 Repositories</span>
-          </div>
-          <div class="stat">
-            <i class="fas fa-star"></i>
-            <span>88 Stars</span>
-          </div>
-        </div>
-        <a href="https://github.com/Asadullah-Dal17" class="cta-button primary" target="_blank" style="margin-top: 1rem;">
-          <i class="fab fa-github"></i> Visit GitHub
-        </a>
-      </div>
     </section>
 <section id="skills" class="section">
   <h2 class="section-title slide-up">Technical Expertise</h2>
@@ -920,6 +903,101 @@
     </div>
   </div>
 </section>
+
+    <!-- Fiverr Services Section -->
+    <section id="fiverr-services" class="section">
+      <h2 class="section-title slide-up">Fiverr Services</h2>
+      <div class="fiverr-services-grid">
+        <article class="service-card slide-up" style="--delay: 0.1s">
+          <header class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+            </div>
+            <div class="fiverr-badge" aria-label="Available on Fiverr">
+              <i class="fab fa-fiverr" aria-hidden="true"></i>
+              <span>Fiverr</span>
+            </div>
+          </header>
+
+          <div class="service-content">
+            <h3 class="service-title">Computer Vision Solutions</h3>
+            <p class="service-description">Custom computer vision applications using OpenCV, MediaPipe, and deep learning frameworks. Perfect for object detection, face recognition, and automation projects.</p>
+
+            <div class="service-features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>OpenCV & MediaPipe integration</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Real-time processing optimization</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Complete documentation & testing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-footer">
+            <div class="service-price">
+              <span class="price-range">$100 - $2,000</span>
+              <span class="price-note">Starting price</span>
+            </div>
+            <a href="https://www.fiverr.com/s/wkgKKQv" class="service-button" target="_blank" rel="noopener noreferrer" aria-label="Hire me for Computer Vision Solutions on Fiverr">
+              <i class="fab fa-fiverr" aria-hidden="true"></i>
+              <span>Hire Me on Fiverr</span>
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="service-card slide-up" style="--delay: 0.2s">
+          <header class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-robot" aria-hidden="true"></i>
+            </div>
+            <div class="fiverr-badge" aria-label="Available on Fiverr">
+              <i class="fab fa-fiverr" aria-hidden="true"></i>
+              <span>Fiverr</span>
+            </div>
+          </header>
+
+          <div class="service-content">
+            <h3 class="service-title">AI & Robotics Development</h3>
+            <p class="service-description">Build intelligent robots and AI systems with computer vision capabilities. Includes Raspberry Pi integration, Arduino programming, and custom automation solutions.</p>
+
+            <div class="service-features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Raspberry Pi & Arduino expertise</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Computer vision integration</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Custom automation solutions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-footer">
+            <div class="service-price">
+              <span class="price-range">$150 - $3,000</span>
+              <span class="price-note">Starting price</span>
+            </div>
+            <a href="https://www.fiverr.com/s/akXvvVa" class="service-button" target="_blank" rel="noopener noreferrer" aria-label="Hire me for AI & Robotics Development on Fiverr">
+              <i class="fab fa-fiverr" aria-hidden="true"></i>
+              <span>Hire Me on Fiverr</span>
+              <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Achievements Section -->
     <section id="achievements" class="section">
       <h2 class="section-title slide-up">Certifications & Achievements</h2>
@@ -1010,179 +1088,6 @@
   </div>
 </section> -->
 
-<!-- Blog Section - EXPAND -->
-<section class="section" id="blog">
-  <div class="container">
-    <h2 class="section-title slide-up">Latest Articles</h2>
-    <div class="blog-grid">
-      <div class="blog-card slide-up" style="--delay: 0.1s">
-        <div class="blog-category">Computer Vision</div>
-        <h3 class="blog-title">Getting Started with MediaPipe in Python</h3>
-        <p class="blog-excerpt">Learn how to use MediaPipe for real-time pose detection, hand tracking, and face mesh detection with Python.</p>
-        <div class="blog-meta">
-          <span><i class="far fa-calendar"></i> Nov 16, 2025</span>
-          <span><i class="far fa-clock"></i> 8 min read</span>
-        </div>
-        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="blog-card slide-up" style="--delay: 0.2s">
-        <div class="blog-category">Robotics</div>
-        <h3 class="blog-title">Building a Face-Tracking Robot with Arduino</h3>
-        <p class="blog-excerpt">Step-by-step guide to creating a robot that follows faces using computer vision and Arduino controllers.</p>
-        <div class="blog-meta">
-          <span><i class="far fa-calendar"></i> Nov 10, 2025</span>
-          <span><i class="far fa-clock"></i> 12 min read</span>
-        </div>
-        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-      </div>
-
-      <div class="blog-card slide-up" style="--delay: 0.3s">
-        <div class="blog-category">Education</div>
-        <h3 class="blog-title">Teaching Computer Vision to Beginners</h3>
-        <p class="blog-excerpt">Tips and tricks for making computer vision concepts accessible to students with no prior experience.</p>
-        <div class="blog-meta">
-          <span><i class="far fa-calendar"></i> Nov 5, 2025</span>
-          <span><i class="far fa-clock"></i> 6 min read</span>
-        </div>
-        <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Case Studies Section - EXPAND -->
-<section class="section" id="case-studies">
-  <div class="container">
-    <h2 class="section-title slide-up">Case Studies</h2>
-    <div class="case-studies-grid">
-      <div class="case-study-card slide-up" style="--delay: 0.1s">
-        <div class="case-study-header">
-          <h3>Eyes Position Estimator for Accessibility</h3>
-          <span class="case-study-badge">Featured</span>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
-          <p>A non-profit organization needed a hands-free control system for disabled users to interact with computers using only eye movements.</p>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-lightbulb"></i> Solution</h4>
-          <p>Developed a real-time eye tracking system using MediaPipe with 60 FPS performance. Implemented gaze-based mouse control and click detection.</p>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-check-circle"></i> Results</h4>
-          <ul>
-            <li>3 successful client implementations</li>
-            <li>162 GitHub stars</li>
-            <li>Improved user accessibility by 95%</li>
-            <li>Cost-effective open-source solution</li>
-          </ul>
-        </div>
-        <div class="case-study-links">
-          <a href="https://github.com/Asadullah-Dal17/Eyes-Position-Estimator-Mediapipe" class="case-study-link" target="_blank">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </div>
-
-      <div class="case-study-card slide-up" style="--delay: 0.2s">
-        <div class="case-study-header">
-          <h3>Distance Measurement System for Retail</h3>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-exclamation-circle"></i> Challenge</h4>
-          <p>Retail client needed to measure object distances from a single camera for inventory management and analytics.</p>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-lightbulb"></i> Solution</h4>
-          <p>Implemented triangle similarity algorithm with face detection and YOLOv4 object detection, compatible with Raspberry Pi.</p>
-        </div>
-        <div class="case-study-section">
-          <h4><i class="fas fa-check-circle"></i> Results</h4>
-          <ul>
-            <li>297 GitHub stars</li>
-            <li>Raspberry Pi compatible</li>
-            <li>±5cm measurement accuracy</li>
-            <li>Real-time processing capability</li>
-          </ul>
-        </div>
-        <div class="case-study-links">
-          <a href="https://github.com/Asadullah-Dal17/Distance_measurement_using_single_camera" class="case-study-link" target="_blank">
-            <i class="fab fa-github"></i> View Code
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ Section - EXPAND -->
-<section class="section" id="faq">
-  <div class="container">
-    <h2 class="section-title slide-up">Frequently Asked Questions</h2>
-    <div class="faq-grid">
-      <div class="faq-item slide-up" style="--delay: 0.1s">
-        <div class="faq-question">
-          What services do you offer? 
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>I provide: (1) Custom computer vision development, (2) AI/ML model training and deployment, (3) Educational content creation and tutorials, (4) Technical consulting and code reviews, (5) Robotics integration projects, and (6) Teaching services for computer science.</p>
-        </div>
-      </div>
-
-      <div class="faq-item slide-up" style="--delay: 0.2s">
-        <div class="faq-question">
-          What is your typical project timeline?
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Project timelines vary based on complexity: Simple projects (2-4 weeks), Medium projects (1-3 months), Complex solutions (3-6 months). I provide detailed estimates after discussing project requirements.</p>
-        </div>
-      </div>
-
-      <div class="faq-item slide-up" style="--delay: 0.3s">
-        <div class="faq-question">
-          Do you offer post-project support?
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Yes! I provide 30 days of free support for bug fixes and minor adjustments. Extended support packages are available for larger projects.</p>
-        </div>
-      </div>
-
-      <div class="faq-item slide-up" style="--delay: 0.4s">
-        <div class="faq-question">
-          What is your minimum project budget?
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Minimum project budget is $500 USD. However, educational projects and open-source contributions may be negotiated on a case-by-case basis.</p>
-        </div>
-      </div>
-
-      <div class="faq-item slide-up" style="--delay: 0.5s">
-        <div class="faq-question">
-          Can you work on Raspberry Pi projects?
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Absolutely! I specialize in embedded systems and have extensive experience optimizing computer vision applications for Raspberry Pi and other single-board computers.</p>
-        </div>
-      </div>
-
-      <div class="faq-item slide-up" style="--delay: 0.6s">
-        <div class="faq-question">
-          Do you provide educational tutoring?
-          <i class="fas fa-chev-down"></i>
-        </div>
-        <div class="faq-answer">
-          <p>Yes, I offer one-on-one tutoring in computer vision, Python, and AI/ML. Custom curriculum available based on your learning goals.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- CTA Section -->
 <section class="section" id="cta">
